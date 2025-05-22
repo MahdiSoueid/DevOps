@@ -9,7 +9,7 @@ This directory contains Ansible playbooks to set up Docker and Docker Compose on
 3. SSH key pair for authentication
 
 To access the server for the file
-ssh username@your-server-ip 'sudo bash -s' < script.sh
+ssh  'echo "your-sudo-password" | sudo -S bash -s' < script.sh
 
 ## Configuration
 

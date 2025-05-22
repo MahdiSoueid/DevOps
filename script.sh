@@ -14,8 +14,9 @@ fi
 # Clone the repository
 echo "Cloning the repository..."
 git clone https://github.com/MahdiSoueid/DevOps.git
-cd springboot-postgres-demo
+cd DevOps
 
 # Run the Ansible playbook
 echo "Running Ansible playbook..."
+cd ansible
 ansible-playbook -i inventory.ini setup_docker.yml
