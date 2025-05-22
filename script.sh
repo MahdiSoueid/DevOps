@@ -13,7 +13,7 @@ fi
 
 # Clone the repository
 echo "Cloning the repository..."
-git clone https://github.com/your-username/springboot-postgres-demo.git
+git clone https://github.com/MahdiSoueid/DevOps.git
 cd springboot-postgres-demo
 
 # Run the Ansible playbook
