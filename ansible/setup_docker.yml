@@ -2,6 +2,8 @@
 - name: Setup Docker and Docker Compose
   hosts: all
   become: true
+  vars:
+    current_user: "{{ lookup('env', 'USER') }}"  # Get current user from environment
   tasks:
     - name: Update apt cache
       apt:
@@ -53,7 +55,7 @@
 
     - name: Add user to docker group
       user:
-        name: "{{ ansible_user }}"
+        name: "{{ current_user }}"
         groups: docker
         append: yes
 
