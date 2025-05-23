@@ -18,6 +18,7 @@
           - python3-pip
           - virtualenv
           - python3-setuptools
+          - python3-docker
         state: present
 
     - name: Add Docker GPG apt Key
@@ -38,10 +39,6 @@
           - containerd.io
         state: present
         update_cache: yes
-
-    - name: Install Docker Module for Python
-      pip:
-        name: docker
 
     - name: Install Docker Compose
       get_url:
