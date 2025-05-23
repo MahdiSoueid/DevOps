@@ -123,3 +123,8 @@ azure.json
 # Local development
 *.local
 local.*
+
+# Scripts
+script.sh
+*.sh
+!ansible/scripts/*.sh
